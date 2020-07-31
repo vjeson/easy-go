@@ -1,0 +1,29 @@
+POST http://localhost:8080/login
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json; charset=utf-8
+
+{"user_name":"aaa", "password": "123456"}
+
+<> 2020-07-18T093225.200.json
+<> 2020-07-17T051317.200.json
+<> 2020-07-17T051127.200.json
+
+###
+
+GET http://localhost:8080/index/hello
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json; charset=utf-8
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIxNyIsIm5hbWUiOiJhYWEiLCJleHAiOjE1OTUwNjEyMDgsImlzcyI6ImJnLWxubXAiLCJuYmYiOjE1OTUwNTMwMDh9.Qqfhgjudb-6dudRzYgb49TdznFPhr9fXmfht9ZdWPCk
+
+{"user_name":"aaa", "password": "123456"}
+
+<> 2020-07-17T051400.200.json
+<> 2020-07-17T051341.200.json
+<> 2020-07-17T051229.200.json
+<> 2020-07-17T051158.200.json
+<> 2020-07-17T051145.404.txt
+
+###
+
