@@ -14,8 +14,8 @@ func InitRouter() *gin.Engine {
 
 	router.Use(middleware.Cors())
 
-	//router.Use(middleware.LoggerToFile())
-	router.Use(middleware.LoggerToStd())
+	router.Use(middleware.LoggerToFile())
+	//router.Use(middleware.LoggerToStd())
 
 
 	register(router)

@@ -15,7 +15,7 @@ func Login(c *gin.Context){
 	//读取body2
 	//data, _ := ioutil.ReadAll(c.Request.Body)
 	//fmt.Print(data)
-	var user service.User
+	var user service.Users
 	err := c.BindJSON(&user)
 	if err != nil {
 		res := &util.Response{Code: 1000, Msg: "数据解析出错"}

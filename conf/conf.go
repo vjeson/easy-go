@@ -15,6 +15,7 @@ type conf struct {
 
 type server struct {
 	Address string `yaml:"address"'`
+	Model   string `yaml:"model"`
 }
 
 type db struct {

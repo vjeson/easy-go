@@ -43,7 +43,7 @@ func LogFile() *logrus.Logger {
 			//rotatelogs.WithLinkName(logFile),
 
 			// 设置最大保存时间(7天)
-			rotatelogs.WithMaxAge(7*24*time.Hour),
+			rotatelogs.WithMaxAge(30*24*time.Hour),
 
 			// 设置日志切割时间间隔(1天)
 			rotatelogs.WithRotationTime(24*time.Hour),
@@ -62,6 +62,7 @@ func LogFile() *logrus.Logger {
 		lfHook := lfshook.NewHook(writeMap, &logrus.JSONFormatter{
 			TimestampFormat: "2006-01-02 15:04:05",
 		})
+
 
 		// 新增 Hook
 		logToFile.AddHook(lfHook)

@@ -83,7 +83,7 @@ func SetSignKey(key string) string {
 	return SignKey
 }
 
-func (j *JWT) GenerateToken(user *service.User) (map[string]interface{}, error) {
+func (j *JWT) GenerateToken(user *service.Users) (map[string]interface{}, error) {
 
 	expires := 7200
 	claims := CustomClaims{
